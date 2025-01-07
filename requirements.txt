@@ -1,0 +1,17 @@
+numpy
+scipy
+tqdm
+lpips
+mmcv
+imageio
+imageio-ffmpeg
+opencv-python
+trimesh
+plyfile
+scikit-image
+scikit-learn
+ninja
+pymcubes
+setuptools==59.5.0
+icecream
+matplotlib

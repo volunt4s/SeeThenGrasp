@@ -1,0 +1,14 @@
+# main
+bash single_runner.sh configs/custom_e2e exp /charuco_big
+bash single_runner.sh configs/custom_e2e exp /stapler
+bash single_runner.sh configs/custom_e2e exp /green_stapler
+bash single_runner.sh configs/custom_e2e exp /bulldozer
+
+
+# for mesh
+bash extract_mesh.sh configs/custom_e2e exp /stapler
+
+# FOR TEST ONE PYTHON
+python run.py --config configs/custom_e2e/coarse.py -p exp --no_reload --run_dvgo_init --sdf_mode voxurf_coarse --scene /charuco_big
+python run.py --config configs/custom_e2e/coarse.py -p exp --no_reload --run_dvgo_init --sdf_mode voxurf_coarse --scene /stapler
+python run.py --config configs/custom_e2e/coarse.py -p exp --no_reload --run_dvgo_init --sdf_mode voxurf_coarse --scene /green_stapler

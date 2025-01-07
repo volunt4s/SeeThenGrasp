@@ -1,0 +1,6 @@
+python3 run.py --config configs/custom/charuco.py
+
+python3 run.py --config configs/custom/charuco.py --export_bbox_and_cams_only cam.npz
+python3 run.py --config configs/custom/charuco.py --export_coarse_only coarse_only.npz
+
+python3 tools/vis_volume.py coarse_only.npz 0.001 --cam cam.npz
