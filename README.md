@@ -6,11 +6,6 @@ This repository is the official implementation of our paper, **See-Then-Grasp: O
 
 <img src='./asset/teaser.png'>
 
-## Demo video
-<video>
-  <source src='./asset/demo_video.mp4'>
-</video>
-
 ## Prerequisite
 Our setup utilizes a single [Franka Panda robot](https://github.com/moveit/panda_moveit_config) and two [RealSense cameras](https://github.com/IntelRealSense/realsense-ros). One camera is set as the robot’s hand-eye camera, while the other is configured as an external fixed camera. We  highly recommend setting up a robot environment identical to our configuration by referring to the image below.
 
